@@ -31,7 +31,7 @@ function combination<T extends Item = Item>(items: Array<T>, pick: number): Arra
     }
 
 
-    // 把現在輪到 type的資訊取出
+    // 把現在輪到的type的資訊取出
     const { type: curType, amount: maxAmount } = items[nextItemIdx]
 
     // 從1個到 maxAmount個的 curType加入現在的combination，並把remain去除使用在curType上的數字後交給下個type
